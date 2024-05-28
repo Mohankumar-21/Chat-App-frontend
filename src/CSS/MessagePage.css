@@ -47,7 +47,7 @@
 }
 
 .Message-Box {
-    height: calc(100vh - 130px);
+    height: calc(99vh - 130px);
     overflow-x: hidden;
     overflow-y: scroll;
 

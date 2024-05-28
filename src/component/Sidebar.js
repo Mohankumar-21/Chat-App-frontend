@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import '../CSS/Sidebar.css';
-import { AiOutlineWechat } from "react-icons/ai";
 import { HiUserGroup } from "react-icons/hi2";
 import { NavLink, useNavigate } from 'react-router-dom';
 import { RiLogoutCircleLine } from "react-icons/ri";
@@ -11,6 +10,7 @@ import talk from '../assests/talk.avif'
 import SearchUser from './SearchUser';
 import { FaImage, FaVideo } from "react-icons/fa";
 import { logout } from '../redux/userSlice';
+import { SiGooglemessages } from "react-icons/si";
 
 const Sidebar = () => {
 
@@ -71,22 +71,22 @@ const Sidebar = () => {
   return (
     <div className='sidebar-main bg-white'> 
         <div className='Sidebar-container py-4 Sidebar-contain' >
-           <div>
+           <div className='top-container' >
                 <NavLink className={({isActive}) =>`logo-design ${isActive && "bacgroud_Set"} ` } title='chat'>
-                <AiOutlineWechat 
-                    size={30}
+                <SiGooglemessages
+                    size={35}
                     style={{color : 'black'}}
                 />
                 </NavLink>
                 
                 <div onClick={()=> SetSearchUser(true)} className='logo-design' title='Add friend'>
                     <HiUserGroup
-                    size={30}
+                    size={40}
                     />
                 </div>
            </div>
            <div className='bottom-container'>
-                <button title={`${user?.name}`} className='avatar-conatiner mb-3 mx-auto' onClick={()=>{setUserEdit(true)}}>
+                <button title={`${user?.name}`} className='avatar-conatiner mb-1 mx-auto' onClick={()=>{setUserEdit(true)}}>
                    <Avatar 
                     width={45} 
                     height={45}
@@ -103,8 +103,8 @@ const Sidebar = () => {
         </div>
 
 
-         <div className='p-1 pt-2'>
-            <h4 className='Message-Container'>Message</h4>
+         <div className='p-1 pt-2 Message-box'>
+            <h4 className='Message-Container'>Chats</h4>
              <hr/>
              <div className=' message-content scrollbar' >
                   {
@@ -161,7 +161,7 @@ const Sidebar = () => {
                                               <div className='lastmsg-imagevideo-alignment' >   
                                                 <span><FaVideo size={20}/></span>
                                                  <span>Video</span>
-                                               
+    
                                               </div>
                                               
                                         )
@@ -170,7 +170,9 @@ const Sidebar = () => {
                                    </div>
                                   <p className='lastmessage-alignment' >{msg?.lastMsg?.text}</p>
                                 </div>
+
                             </div>
+                            {/* <p className='unseen-container'>{msg?.unseenMsg}</p> */}
                           </NavLink>
                       )
                     })
