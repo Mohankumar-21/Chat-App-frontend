@@ -1,11 +1,11 @@
 import React from 'react';
 import '../CSS/Divider.css'
 
-const Divider = () => {
+const Split = () => {
   return (
     <div className='Divider-container'> 
     </div>
   )
 }
 
-export default Divider;
+export default Split;

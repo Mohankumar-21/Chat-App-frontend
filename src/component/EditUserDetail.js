@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import '../CSS/EditUserDetail.css';
-import Avatar from './Avatar';
+import Avatar from './ProfilepicDesign';
 import UploadFile from '../helpers/UploadFile';
-import Divider from './Divider';
 import axios from 'axios';
 import { message } from 'antd';
 import { useDispatch } from 'react-redux';
@@ -92,7 +91,7 @@ const EditUserDetail = ({ onClose, user }) => {
               </label>
             </div>
           </div>
-          <Divider />
+          <hr />
           <div className='d-flex gap-3'>
             <button type='button' onClick={onClose} className='cancel-btn py-1 px-3 rounded'>Cancel</button>
             <button type='submit' className='Save-btn py-1 px-3 rounded'>Save</button>

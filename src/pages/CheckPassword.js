@@ -3,7 +3,7 @@ import '../CSS/RegisterPage.css';
 import {Link, useLocation, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import { message} from 'antd';
-import Avatar from '../component/Avatar';
+import Avatar from '../component/ProfilepicDesign';
 import { useDispatch } from 'react-redux';
 import { setToken } from '../redux/userSlice';
 

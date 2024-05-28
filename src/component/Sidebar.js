@@ -3,7 +3,7 @@ import '../CSS/Sidebar.css';
 import { HiUserGroup } from "react-icons/hi2";
 import { NavLink, useNavigate } from 'react-router-dom';
 import { RiLogoutCircleLine } from "react-icons/ri";
-import Avatar from './Avatar';
+import Avatar from './ProfilepicDesign';
 import {useDispatch, useSelector} from 'react-redux';
 import EditUserDetail from './EditUserDetail';
 import talk from '../assests/talk.avif'

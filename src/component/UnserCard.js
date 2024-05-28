@@ -1,4 +1,4 @@
-import Avatar from './Avatar';
+import Avatar from './ProfilepicDesign';
 import React from 'react';
 import '../CSS/UserCard.css';
 import { Link } from 'react-router-dom';

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import {Link, useParams} from 'react-router-dom';
 import '../CSS/MessagePage.css';
-import Avatar from './Avatar';
+import Avatar from './ProfilepicDesign';
 import { PiDotsThreeCircleVertical } from "react-icons/pi";
 import { GoTriangleLeft } from "react-icons/go";
 import { BiPlusCircle } from "react-icons/bi";
